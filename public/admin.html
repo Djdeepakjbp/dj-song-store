@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin • DJ Song Store</title><link rel="stylesheet" href="/assets/style.css"></head>
+<body><header class="top"><div class="brand"><span class="logo">DJ</span><b>Store Admin</b></div><a href="/" class="admin-link">Store</a></header>
+<main class="admin-wrap">
+<div class="panel"><h1>Admin Panel</h1><p>Add/edit songs and see orders.</p><input id="password" type="password" placeholder="Admin password"><button onclick="login()">Login</button></div>
+<div id="dashboard" hidden>
+<div class="panel"><h2>Add New Song</h2><div class="form-grid">
+<input id="id" placeholder="ID e.g. mera-song-2026"><input id="title" placeholder="Song title"><input id="artist" placeholder="DJ / Artist">
+<input id="price" type="number" min="1" placeholder="Price ₹"><input id="file" placeholder="MP3 filename e.g. mera-song.mp3"><input id="cover" placeholder="Cover URL (optional)">
+<input id="preview" placeholder="Preview MP3 URL (optional)"><textarea id="description" placeholder="Description"></textarea>
+</div><button onclick="addProduct()">Add Song</button><div id="msg"></div></div>
+<div class="panel"><h2>Products</h2><div id="products"></div></div>
+<div class="panel"><h2>Orders</h2><div id="orders"></div></div>
+</div></main><script src="/assets/admin.js"></script></body></html>
